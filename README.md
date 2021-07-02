@@ -1,5 +1,5 @@
 # Overview
-This is a healhcare portal which enables the patients to easily access medical attention from the respective healthcare facility. The application 'on full functionality' will emable booking of the medical services, store and manage patient data (such as medical history, lab results)
+This is a healhcare portal (hospital portal) which enables the patients to easily access medical attention from the respective healthcare facility. The application 'on full functionality' will emable booking of the medical services, store and manage patient data (such as medical history, lab results)
  
 ## Built With
 
