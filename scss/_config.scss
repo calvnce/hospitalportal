@@ -1,0 +1,84 @@
+$primary-color: #272a31;
+$secondary-color: #d3d3d3;
+$tertiary-color: #ec5242;
+$alt-color: #7e76000a;
+$primary-font-family:  'Lato', sans-serif;
+$secondary-font-family: 'Cocogoose', monospace;
+$title-font: 'Playfair Display', serif;
+
+%flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+%row-center {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  @extend %flex;
+}
+
+@mixin flex-center {
+  @extend %row-center;
+}
+
+%font {
+  font-family: $primary-font-family;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin flex-space {
+  @extend %row-center;
+
+  justify-content: space-evenly;
+}
+
+@mixin flex-between {
+  @extend %row-center;
+
+  justify-content: space-between;
+}
+
+@mixin flex-colunm {
+  @include flex-space;
+
+  flex-flow: column wrap;
+}
+
+@function compute-color($color) {
+  @if (lightness($color) < 85%) {
+    @return lighten($color, 65%);
+  }
+
+  @else {
+    @return darken($color, 70%);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 2;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: rotate(-45deg);
+    transform: translateY(30px);
+  }
+
+  to {
+    transform: rotate(0);
+    transform: translateY(0);
+    transition: transform 2s ease;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
