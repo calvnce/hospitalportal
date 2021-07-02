@@ -186,7 +186,9 @@ footer {
         background: initial;
         border-radius: initial;
         color: compute-color($secondary-color);
-        font-weight: initial;
+        font-size: 13px;
+        font-weight: 800;
+        height: 40px;
       }
     }
   }

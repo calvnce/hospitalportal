@@ -278,7 +278,9 @@ footer {
   background: initial;
   border-radius: initial;
   color: white;
-  font-weight: initial;
+  font-size: 13px;
+  font-weight: 800;
+  height: 40px;
 }
 
 .active a {
