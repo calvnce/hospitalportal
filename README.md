@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Credit to Cindy Shin  for providing the design guideline template
 
 ## Acknowledgments
 
